@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+task
+Ce projet est une application de gestion de tâches développée avec Next.js, ShadCN UI, Clerk, Prisma, MongoDB et Axios. Il permet aux utilisateurs de créer, modifier, supprimer et suivre l'état de leurs tâches de manière fluide et sécurisée.
 
-## Getting Started
+🚀 Technologies Utilisées : 🔹 Next.js Framework React performant pour la génération de pages SSR (Server-Side Rendering) et SSG (Static Site Generation).
 
-First, run the development server:
+🔹 ShadCN UI Bibliothèque de composants UI élégants et réactifs, permettant un design moderne et rapide à mettre en place.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔹 Clerk Gestion de l'authentification avec inscription, connexion et gestion des utilisateurs (OAuth, magic links, etc.).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔹 Prisma & MongoDB ORM utilisé pour interagir avec une base de données MongoDB, facilitant la gestion des modèles et des requêtes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔹 Axios Utilisé pour gérer les requêtes HTTP entre le frontend et le backend, assurant une communication fluide avec l’API Next.js.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📌 Fonctionnalités Principales :
 
-## Learn More
+✅ Authentification sécurisée avec Clerk
 
-To learn more about Next.js, take a look at the following resources:
+✅ Ajout, modification et suppression de tâches
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Gestion des statuts des tâches : TODO, IN_PROGRESS, DONE...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✅ Priorisation des tâches : LOW, MEDIUM, HIGH
 
-## Deploy on Vercel
+✅ Interface moderne et responsive avec ShadCN UI
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ Stockage des tâches dans MongoDB via Prisma
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ Gestion des requêtes API avec Axios
+
+Conclusion Ce projet offre une gestion efficace des tâches avec une interface moderne, une authentification sécurisée et une base de données performante. Axios facilite la communication entre le frontend et le backend, assurant une expérience utilisateur fluide. 🚀
