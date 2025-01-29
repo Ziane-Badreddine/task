@@ -34,6 +34,7 @@ import { redirect, useRouter } from "next/navigation"
 import axios from "axios";
 import { toast } from "sonner"
 import { Task } from "@prisma/client"
+import { ModeToggle } from "@/components/ui/ModeToggle"
 
 
 
@@ -105,15 +106,13 @@ const Edit = ({ task }: { task: Task | null }) => {
                     <SignedIn>
                         <UserButton />
                     </SignedIn>
+                    <ModeToggle />
                     <Button size={"icon"}>
                         <Link href={"/home"}>
                             <Home className="w-3 h-3" />
                         </Link>
                     </Button>
-
                 </div>
-
-
             </div>
 
             <Form {...form}>

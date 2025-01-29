@@ -2,6 +2,7 @@
 
 import { columns } from '@/app/_components/columns'
 import { DataTable } from '@/components/ui/DataTable'
+import { ModeToggle } from '@/components/ui/ModeToggle'
 import useFetch from '@/hooks/useFetch'
 import db from '@/prisma/client'
 import { SignedIn, useAuth, UserButton, useUser } from '@clerk/nextjs'
@@ -11,7 +12,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 const PageHome = () => {
-  const {data,error,loading} = useFetch("/api/task",10000);
+  const { data, error, loading } = useFetch("/api/task", 10000);
   const { user } = useUser()
 
   return (
@@ -25,9 +26,12 @@ const PageHome = () => {
             Here's a list of your tasks for this month!
           </p>
         </div>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
+        <div className="flex items-center justify-center gap-2">
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          <ModeToggle />
+        </div>
       </div>
       <div className=" py-10 w-full">
         <DataTable columns={columns} data={data} loading={loading} />

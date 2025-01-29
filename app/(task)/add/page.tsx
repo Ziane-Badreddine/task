@@ -34,6 +34,7 @@ import { useRouter } from "next/navigation"
 import axios from "axios";
 import { toast } from "sonner"
 import { auth } from "@clerk/nextjs/server"
+import { ModeToggle } from "@/components/ui/ModeToggle"
 
 
 
@@ -95,6 +96,7 @@ const PageAdd = () => {
           <SignedIn>
             <UserButton />
           </SignedIn>
+          <ModeToggle />
           <Button size={"icon"}>
             <Link href={"/home"}>
               <Home className="w-3 h-3" />
